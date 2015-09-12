@@ -2,10 +2,10 @@ task wrapper(type: Wrapper) {
   gradleVersion = '2.6'
 }
 
-defaultTasks 'java'
+defaultTasks 'groovy'
 
 apply plugin: 'eclipse'
-apply plugin: 'java'
+apply plugin: 'groovy'
 	
 repositories {
 	jcenter()
@@ -13,8 +13,8 @@ repositories {
 
 dependencies {
 	testCompile 'org.hamcrest:hamcrest-all:1.3',
-		'org.mockito:mockito-core:1.9.5',
-		'junit:junit:4.11'
+		'org.mockito:mockito-core:1.10.19',
+		'org.spockframework:spock-core:1.0-groovy-2.3'
 }
 
 configurations {
